@@ -10,6 +10,8 @@ class Star {
     x = random (-width, width);
     y = random(-height, height);
     z = random(width);
+    px = x;
+    py = y;
   }
 }
 void update() {
@@ -22,16 +24,16 @@ void update() {
 void show() {
   fill(255);
 
-float sx = map(x / z, 0, 1, 0, width);
-float sy = map(y / z, 0, 1, 0, height);
+  //float psx = map(x / z, 0, 1, 0, width);
+  //float psy = map(y / z, 0, 1, 0, height);
 
-  
+
   noStroke();
   float r = map(z, 0, width, 16, 0);
   ellipse(sx, sy, 8, 8);
   stroke(255);
   line(px, py, sx, sy);
 
-  px = sx;
-  py = sy;
+  //px = x;
+  //py = y;
 }
