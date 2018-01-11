@@ -47,12 +47,10 @@ class Star {
     }
     //red/pink
     else {
-      int colour3 = 255-mouseX;
+      int colour3 = 255-mouseX / 2;
       fill(255, colour3, 255);
       stroke(255, colour3, 255);
     }
-
-    //noStroke();
     
     //have size increase the closer the ellipse goes to the edge of the canvas
     float r = map(z, 0, width, 8, 0);
@@ -63,7 +61,6 @@ class Star {
     float py = map(y / pz, 0, 1, 0, height);
     
     //draw line
-    //stroke(255);
     line(px, py, sx, sy);
   }
 }
