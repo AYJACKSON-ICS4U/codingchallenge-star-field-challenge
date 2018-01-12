@@ -7,6 +7,7 @@ One person explaining -
 
 
 Jordan, Domonic, Connor, Elizabeth
+
 ## Expanding on Original Code
 Different colours
 
