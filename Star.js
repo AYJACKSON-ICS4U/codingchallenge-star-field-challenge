@@ -1,19 +1,25 @@
+//create 800 stars
 Star[] stars = new Star [800];
 
-
+//declare speed variable
 float speed;
 void setup() {
-size(800, 800);
-for (int i = 0; i < stars.length; i++){
-  stars[i] = new Star();
-}
+  //set canvas size
+  size(800, 800);
+  for (int i = 0; i < stars.length; i++){
+    stars[i] = new Star();
+  }
 }
 void draw() {
-speed = map(mouseX, 0, width, 0, 20);
-background(0, 0, 0);
-translate(width/2, height/2);
-for (int i = 0; i < stars.length; i++){
-  stars[i] = update();
-  stars[i].show();
-}
+  //map the speed
+  speed = map(mouseX, 0, width, 0, 20);
+  //make background black
+  background(0, 0, 0);
+  //move to center of canvas
+  translate(width/2, height/2);
+  //call functions for each star in array
+  for (int i = 0; i < stars.length; i++){
+    stars[i] = update();
+    stars[i].show();
+  }
 }
