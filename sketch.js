@@ -37,15 +37,11 @@ void show() {
   noStroke();
   float r = map(z, 0, width, 16, 0);
   ellipse(sx, sy, 8, 8);
-
+  
   float px = map(x / pz, 0, 1, 0, width);
   float py = map(y / pz, 0, 1, 0, height);
-  //float psx = map(x / z, 0, 1, 0, width);
-  //float psy = map(y / z, 0, 1, 0, height);
-
+  
+  //draw line
   stroke(255);
   line(px, py, sx, sy);
-
-  //px = x;
-  //py = y;
 }
