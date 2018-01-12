@@ -5,6 +5,8 @@ One person explaining -
 
 2 people walking around helping - 
 
+
+Jordan, Domonic, Connor, Elizabeth
 ## Expanding on Original Code
 Different colours
 
