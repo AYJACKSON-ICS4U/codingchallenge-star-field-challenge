@@ -1,9 +1,9 @@
 ## Presentation
-One person typing code
+One person typing code - 
 
-At least one person explaining
+One person explaining - 
 
-2 people walking around helping
+2 people walking around helping - 
 
 ## Expanding on Original Code
 Different colours
@@ -11,3 +11,5 @@ Different colours
 Origin moves with mouse
 
 Number of stars?
+
+Change shape (not an ellipse)
