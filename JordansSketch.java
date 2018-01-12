@@ -20,8 +20,8 @@ class Star {
     //once star is off the canvas, declare new positions
     if(z < 1) {
       z = width;
-      x = random(-width, width);
-      y = random(-height, height);
+      //x = random(-width, width);
+      //y = random(-height, height);
       x = random(-mouseX, mouseX);
       y = random(-mouseY, mouseY);
       pz = z;
