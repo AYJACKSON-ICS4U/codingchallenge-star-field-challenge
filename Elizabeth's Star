@@ -21,12 +21,15 @@ function Star() {
     var sx = map(this.x / this.z, 0, 1, 0, width);
     var sy = map(this.y / this.z, 0, 1, 0, height);
 
-  //  var r = map(this.z, 0, width, 16, 0);
-    colorMode(HSB);
-    var hue = (100 - this.x) / 2;
+    var r = map(this.z, 0, width, 16, 0);
+    //colorMode(HSB);
+   var hue1 = (200 + this.x)/2;
+   var hue2 = (200 - this.x)/2;
+    fill(hue1, hue2, 255, this.x);
+
     noStroke();
-    //fill(255, 255, 255, this.x);
-    fill(hue, 255, 255, this.x);
+    //fill(255, 255, 255);
+  //  fill(hue, 255, 255, this.x);
     beginShape();
     //vertex(207, 239);
     vertex(sx+7, sy+39);
@@ -68,9 +71,9 @@ function Star() {
 
     this.pz = this.z;
 
-    stroke(255);
+
+    noStroke();
     line(px, py, sx, sy);
 
   }
 }
-
