@@ -16,5 +16,11 @@ Change shape (not an ellipse)
 
 
 
-## Intro for Presentation
-For our challenge, we are making a star field. We are going to animate stars/ellipses going across the canvas to make it look like we are going through space at warp speed.  In other words, we are going to make a simulation of stars/ellipses moving at warp speed.
+## Presentation
+  For our challenge, we are making a star field. We are going to make a simulation of stars moving at warp speed.
+
+  We are going to walk you through the base code and then show you a few spinoffs that we made so that you can make your own.
+
+  -Program initial code
+  -Show each of our versions
+  -Everyone walks around helping
