@@ -11,11 +11,11 @@ void setup() {
   }
 }
 void draw() {
-  //map the speed
+  //map the speed so that it changes with the mouse position
   speed = map(mouseX, 0, width, 0, 20);
   //make background black
   background(0, 0, 0);
-  //move to center of canvas
+  //move stars to center of canvas
   translate(width/2, height/2);
   //call functions for each star in array
   for (int i = 0; i < stars.length; i++){
