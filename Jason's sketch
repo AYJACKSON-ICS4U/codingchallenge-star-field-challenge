@@ -1,0 +1,20 @@
+var stars = [];
+var speed;
+function setup(){
+  createCanvas(400,400);
+  for (var i = 0; i < 600; i++){
+    stars[i] = new Star;
+  }
+}
+
+function draw(){
+  speed = map(mouseX, 0, width,0,20);
+  background(0,0,0);
+  translate (width/2,height/2);
+  for (var i = 0; i< stars.length; i++){
+    stars[i].update(speed);
+    stars[i].show();
+
+  }
+
+}
